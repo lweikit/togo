@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Mobile Detection</title>
+		<script type="text/javascript" >
+		function DetectIphone()
+		{
+		   var uagent = navigator.userAgent.toLowerCase();
+		   if ((uagent.search("android") > -1)||(uagent.search("iphone") > -1))
+			  alert('true');
+		   else
+			  alert('false');
+		}
+	</script>
+    </head>
+    <body onload='DetectIphone()'>
+        <input type="button" OnClick="DetectIphone()" value="Am I an Iphone?" />
+    </body>
+</html>
